@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": 
+    {"text": "Latin America countries GDP Per Capita"},
+ 
+  "width": 600,
+  "height": 400,
+   
+  "data": {
+    "values": [
+        {"Country": "Ecuador","GDP per capita": 6391},
+        {"Country": "Chile.","GDP per capita": 15355},
+        {"Country": "Mexico","GDP per capita": 11496},
+        {"Country": "Colombia","GDP per capita": 6642},
+        {"Country": "Peru","GDP per capita": 7125},
+        {"Country": "Argentina","GDP per capita": 13650}]
+  },
+ 
+  "mark": {
+    "type": "bar",
+    "color": "rebeccapurple"},
+ 
+  "encoding": {
+    "x": {"field": "Country"},  
+ 
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative"}}
+}
